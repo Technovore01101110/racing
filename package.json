@@ -1,0 +1,20 @@
+{
+  "name": "racing",
+  "homepage": "https://github.com/Web-Design-Development-Society/racing#readme",
+  "bugs": {
+    "url": "https://github.com/Web-Design-Development-Society/racing/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Web-Design-Development-Society/racing.git"
+  },
+  "author": "Web-Design-Development-Society",
+  "scripts": {
+    "start": "node ./scripts/server.mjs"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.3",
+    "ws": "^8.18.3"
+  }
+}
