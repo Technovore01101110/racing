@@ -18,6 +18,10 @@ I would recommend learning basic git commands and merging branches. Decide who w
 3. `git add .`
 4. `git commit -m "part of website added"`
 
+### Where to put code
+
+The `.github/deploy.yaml` specifies custom instructions to deploy to github pages. Anything put in `src` will be considered the root of the site (ie `src/index.html` will be the home page). Anything outside of src will not be deployed to pages.
+
 ### Merge code together
 
 1. `git switch main`
