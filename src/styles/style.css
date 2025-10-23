@@ -75,3 +75,7 @@ footer {
 .profile-3-paragraph {
     grid-column: 8/10;
 }
+
+@media screen and (max-width: 768px){
+    
+}
