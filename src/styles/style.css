@@ -20,8 +20,8 @@ body {
     padding: 0;
 }
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid; 
+    grid-template-columns: 1fr 1fr;*/
     width: 80%;
     margin: 0 auto;
     background-color: #6b8361;
@@ -37,7 +37,6 @@ footer {
     grid-template-columns: 400px 1fr;
     justify-content: center;
     gap: 15px;
-    width: 80%;
     margin: 0 auto;
     text-align: center;
     place-items: center;
