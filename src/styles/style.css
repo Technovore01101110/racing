@@ -37,13 +37,17 @@ footer {
     grid-template-columns: 400px 1fr;
     justify-content: center;
     gap: 15px;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
+    place-items: center;
+}
+.profiles h2, h3 {
+    margin: 5px;
 }
 
 .profile-pic {
-    width: 330px;
+    width: 320px;
     height: 470px;
     margin: 10px;
     border-radius: 30px;
