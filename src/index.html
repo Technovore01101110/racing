@@ -14,6 +14,8 @@
 		<meta property="og:type" content="website" />
 		<link rel="icon" href="./images/favicon.png" type="image/png" />
 		<link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" href="styles/home.css">
+		<script src="scripts/discount.js" defer></script>
 		<title>Great Western Racing</title>
 	</head>
 	<body>
@@ -27,6 +29,7 @@
 		</header>
 		<div id="hero">
 			<img src="images/hero1.png" alt="People running">
+			<button id="discount_button">Get Discount Now</button>
 			<h2>We run - by students, for students, with students.</h2>
 		</div>
 		<main>
@@ -81,5 +84,16 @@
 			<a target="_blank" href="https://www.linkedin.com/company/great-western-racing/"><img src="" alt="LinkedIn"></a>
 		</div>
 	</footer>
+	<div class="popup-overlay">
+		<div class="popup-content">
+			<button class="popup-closer"><b>X</b></button>
+			<h2>Get Discount Code</h2>
+			<form id="discount_forum">
+				<label for="email">Email:</label>
+				<input type="text" id="forum_email" name="name" required>
+				<button type="submit">Send</button>
+			</form>
+		</div>
+	</div>
   </body>
 </html>
