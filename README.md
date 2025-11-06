@@ -4,7 +4,49 @@ This is a website for Great Western Racing to list all of their events and give 
 
 ## Company Links
 
-- [This site](https://web-design-development-society.github.io/racing)
+- [Main site](https://web-design-development-society.github.io/racing)
 - [LinkTree](https://paa.ge/greatwesternracing/en)
 - [Instagram](https://www.instagram.com/greatwesternracing)
 - [First Race Sign up](https://runsignup.com/Race/ID/Rexburg/RexysChristmasBash)
+
+## Page Positions:
+
+**Home Page HTML:** Joshua Walker\
+**Home Page CSS:** Joshua Walker\
+**Events Page HTML:** Graham McClure\
+**Events Page CSS:** Graham McClure\
+**Contact Page HTML:** Hunter Smith\
+**Contact Page CSS:** Hunter Smith\
+**Donation Page HTML:** Eldon McClure
+
+## Project Overview: Great Western Racing Overview
+
+**Company Name:** Great Western Racing\
+**Main Contact Person:**\
+**Contact Info:**\
+**Faculty Advisor:** Zachariah Alvey
+
+### 1. Company Background
+- **What does your company do?**
+
+- **What products or services do you offer?**
+
+- **Who is your target audience or ideal customer?**
+
+- **What makes your company unique from competitors?**
+
+
+### 2. Website Goals
+
+- **Main purpose of the website:**
+- **What actions should visitors take?**
+- **What problems should the website solve?**
+
+### 3. Design & Branding
+
+- **Existing logo or brand assets?**\
+Yes.
+
+- **Brand colors or typography:**
+
+
