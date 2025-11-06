@@ -3,8 +3,20 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" href="images/favicon.png" type="image/png" />
-		<title>Running & Racing</title>
+		<link rel="stylesheet" href="styles/style.css" type="text/css" />
+		<meta name="title" content="Great Western Racing" />
+		<meta name="description" content="We run - by students, for students, with students. Join us for weekly runs, monthly activities, and racing events with rewards."/>
+		<meta property="og:title" content="Great Western Racing" />
+		<meta property="og:description" content="We run - by students, for students, with students." />
+		<!-- TODO - After the site starts using a domain, update these two links -->
+		<meta property="og:image" content="https://web-design-development-society.github.io/racing/images/logo.png"/>
+		<meta property="og:url" content="https://web-design-development-society.github.io/racing" />
+		<meta property="og:type" content="website" />
+		<link rel="icon" href="./images/favicon.png" type="image/png" />
+		<link rel="stylesheet" href="styles/style.css">
+		<link rel="stylesheet" href="styles/home.css">
+		<script src="scripts/discount.js" defer></script>
+		<title>Great Western Racing</title>
 	</head>
 	<body>
 		<header>
@@ -15,14 +27,77 @@
 				<a href="donations.html">Donation</a>
 			</nav>
 		</header>
-		<h1>Great Western Racing</h1>
-		<h2>
-			<p>We are a company....</p>
-			<p>Company Slogan</p>
-			<p>Company Motto</p>
-		</h2>
-		<h3>
-			<p>Comopany Purpose</p>
-		</h3>
-	</body>
+		<div id="hero">
+			<img src="images/hero1.png" alt="People running">
+			<button id="discount_button">Get Discount Now</button>
+			<h2>We run - by students, for students, with students.</h2>
+		</div>
+		<main>
+			<div id="advertisement">
+				<section><img src="https://picsum.photos/400/400" alt=""></section>
+				<section><img src="https://picsum.photos/400/400" alt=""></section>
+				<section><img src="https://picsum.photos/400/400" alt=""></section>
+				<section><img src="https://picsum.photos/400/400" alt=""></section>
+			</div>
+
+			<section class="profiles">
+				<div class="profile-pic">
+					<img src="images/greg-profile-pic.JPG" alt="Greg Profile Picture">
+					<h2>Gregory Page</h2>
+					<h3>Co-Owner</h3>
+				</div>
+				<p>I'm a Finance major at BYU-Idaho and an endurance athlete. I love chasing big goals and helping others do the same. Great Western Racing is where my love for endurance meets y passion for people. In all areas of my life - relationships, fitness, education, and business - I seek to be a builder.
+					<br><span class="names">-Gregory</span>
+				</p>
+				<div class="profile-pic">
+					<img src="images/heidi-profile-pic.JPEG" alt="Heidi Profile Picture">
+					<h2>Heidi Mendenhall</h2>
+					<h3>Co-Owner</h3>
+				</div>
+				<p>
+				   Growing up in a military family taught me to find adventure wherever
+				   I go. Running became my constant, pushing me to complete races and 
+				   climb some of the world's tallest peaks. As a Psychology major at 
+				   BYU-Idaho, I co-foundedGreat Western Racing to build student 
+				   connection and give back through scholarships.
+				   <br><span class="names">-Heidi</span>
+				</p>
+				<div class="profile-pic">
+					<img src="images/jacob-profile-pic.JPG" alt="Jacob Profile Picture">
+					<h2>Jacob O'Neal</h2>
+					<h3>Co-Owner</h3>
+				</div>
+				<p>
+					I'm a college junior majoring in Health Psychology with a 
+					minor in Business Management. I love to run, so I've 
+					competed in numerous 5Ks, half marathons, marathons, and 
+					ultra-distance races. My favorite people are runners. They 
+					know how to make the most difficult times really fun.
+					<br><span class="names">-Jacob</span>
+				</p>
+			</section>
+
+		</main>
+		<!-- Add divs for advertisement images -->
+	
+	</main>
+	<footer>
+		<div class="social">
+			<a target="_blank" href="https://www.instagram.com/greatwesternracing/#"><img src="" alt="Instagram"/></a>
+			<a target="_blank" href="https://www.facebook.com/people/Great-Western-Racing/61581841059462/#"><img src="" alt="Facebook"/></a>
+			<a target="_blank" href="https://www.linkedin.com/company/great-western-racing/"><img src="" alt="LinkedIn"></a>
+		</div>
+	</footer>
+	<div class="popup-overlay">
+		<div class="popup-content">
+			<button class="popup-closer"><b>X</b></button>
+			<h2>Get Discount Code</h2>
+			<form id="discount_forum">
+				<label for="email">Email:</label>
+				<input type="text" id="forum_email" name="name" required>
+				<button type="submit">Send</button>
+			</form>
+		</div>
+	</div>
+  </body>
 </html>
