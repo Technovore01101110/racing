@@ -1,14 +1,14 @@
-#upcoming-events {
+#upcoming-events, #past-events {
     /* display:grid; */
     /* grid-template: 100% / 1fr 1fr 1fr; */
+    margin: 1em;
     max-width: 90%;
     background-color:blue;
     padding:2em;
 }
 
-
 /* Event tiems */
-#upcoming-events .event-item {
+.event-item {
     display: inline-block;
     margin: 0 1em 0 1em;
 }
