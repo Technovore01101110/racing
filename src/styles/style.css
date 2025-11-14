@@ -1,5 +1,5 @@
 header {
-    background-color: #6b8361;
+    background-color: #3b5b56;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -65,11 +65,7 @@ footer {
 
 /* section */
 @import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');header {
-    background-color: #6b8361;
-    max-width: 100%;
-    margin: 0 auto;
-}
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
 #logo {
     background-color: #6b8361;
     width: 160px;
