@@ -10,7 +10,8 @@
   },
   "author": "Web-Design-Development-Society",
   "scripts": {
-    "start": "node ./scripts/server.mjs"
+    "start": "node ./scripts/server.mjs",
+    "prepare": "husky"
   },
   "devDependencies": {
     "husky": "^9.1.7",
