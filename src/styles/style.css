@@ -1,3 +1,11 @@
+:root {
+  --Green: #6b8361; /* A bright orange/tomato color */
+  --Blue: #3b5b56;    /* Black for text */
+  --Yellow: #c79b42;     /* White for background */
+  --White: #f3ebd8;
+}
+
+
 header {
     background-color: #3b5b56;
     max-width: 100%;
