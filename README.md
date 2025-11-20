@@ -48,5 +48,21 @@ This is a website for Great Western Racing to list all of their events and give 
 Yes.
 
 - **Brand colors or typography:**
+    - `#6b8361`
+    - `#3b5b56`
+    - `#c79b42`
+    - `#f3ebd8`
 
+- **Websites you like & why:**
 
+- **Desired style or tone:**
+
+### 4. Content
+
+- **Do you already have text, images or videos?**
+
+- **Who will create or approve content?**
+
+### 5. Functionality
+
+- Which
