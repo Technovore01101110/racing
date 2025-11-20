@@ -3,7 +3,7 @@
  * @param {string} filepath
  * @returns {Promise<Record<string,any>|Record<string,any>[]>}
  */
-async function readJson(filepath) {
+export async function readJson(filepath) {
 	const res = await fetch(filepath);
 	return await res.json();
 }

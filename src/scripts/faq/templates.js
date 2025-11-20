@@ -1,10 +1,10 @@
-const questionCard = ({ q, a }) => {
+export const questionCard = ({ q, a }) => {
 	return `
-    <dialog>
+    <details>
       <summary>
         ${q}
       </summary>
-      ${a}
-    </dialog>
+      <p>${a}</p>
+    </details>
   `;
 };
