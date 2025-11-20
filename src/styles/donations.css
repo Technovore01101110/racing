@@ -44,3 +44,7 @@ header, main, footer {
     margin-left: 30px;
     color: white;
 }
+
+nav {
+    display: grid;
+}
