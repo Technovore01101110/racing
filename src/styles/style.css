@@ -1,5 +1,5 @@
 header {
-    background-color: #3b5b56;
+    background-color: #6b8361;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -65,7 +65,11 @@ footer {
 
 /* section */
 @import url('https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap');header {
+    background-color: #6b8361;
+    max-width: 100%;
+    margin: 0 auto;
+}
 #logo {
     background-color: #6b8361;
     width: 160px;
@@ -207,8 +211,17 @@ main {
 
 /* events section */
 
-/* info section */
-
 /* contact section */
-
+.greg-pic img {
+    width: 200px;
+    height: 275px;
+}
+.heidi-pic img {
+    width: 200px;
+    height: 275px;
+}
+.jacob-pic img {
+    width: 200px;
+    height: 275px;
+}
 /* donations section */
