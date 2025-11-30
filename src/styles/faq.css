@@ -16,7 +16,6 @@ h1 {
 .faq-questions details {
 	border: 1px solid #e2e2e2;
 	border-radius: 8px;
-	padding: 1rem 1.2rem;
 	margin-bottom: 1rem;
 	background: #fafafa;
 }
@@ -24,17 +23,23 @@ h1 {
 .faq-questions details[open] {
 	background: #fff;
 	border-color: #ccc;
+	padding: 1rem 1.2rem;
 }
 
 .faq-questions summary {
 	cursor: pointer;
 	font-weight: 600;
+	padding: 1rem 1.2rem;
 	font-size: 1.05rem;
 	outline: none;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	list-style: none;
+}
+
+.faq-questions details[open] summary {
+	padding: 0;
 }
 
 .faq-questions summary::-webkit-details-marker {
