@@ -30,7 +30,39 @@
 			</nav>
 		</header>
 		<main>
-			<section class="hero-carousel">Carousel Video goes here</section>
+			<div class="carousel-container">
+        <div class="carousel-track">
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <h3>Design Services</h3>
+                    <p>Need a modern, responsive website? Our team delivers beautiful and functional designs. Click below to view our portfolio.</p>
+                    <a href="#design" class="cta-button">View Portfolio</a>
+                </div>
+            </div>
+
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <h3>Development Solutions</h3>
+                    <p>We build robust web applications using the latest JavaScript frameworks and powerful back-end technologies.</p>
+                    <a href="#dev" class="cta-button">Start a Project</a>
+                </div>
+            </div>
+
+            <div class="carousel-slide">
+                <div class="slide-content">
+                    <h3>SEO & Marketing</h3>
+                    <p>Increase your visibility and traffic. We help you rank higher and connect with your audience for massive growth.</p>
+                    <a href="#seo" class="cta-button">Get a Quote</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-indicators">
+            </div>
+
+        <button class="prev-button">&lt;</button>
+        <button class="next-button">&gt;</button>
+    </div>
 			<p>We run -- by students, for students, with students</p>
 			<section class="get-started-block">Get Started</section>
 			<section class="testimonial-carousel">What our runners are saying...</section>
@@ -59,5 +91,94 @@
 			</form>
 		</div>
 	</div>
+	<script>
+        /* --- JavaScript Functionality --- */
+        const track = document.querySelector('.carousel-track');
+        const slides = document.querySelectorAll('.carousel-slide');
+        const prevButton = document.querySelector('.prev-button');
+        const nextButton = document.querySelector('.next-button');
+        const indicatorsContainer = document.querySelector('.carousel-indicators');
+        const carouselContainer = document.querySelector('.carousel-container');
+
+        let currentSlide = 0;
+        const totalSlides = slides.length;
+        //const slideInterval = 5000; // 5 seconds
+        let autoSlideTimer; 
+
+        // Function to move the carousel and update the active dot
+        function updateCarousel() {
+            // Calculate the distance to move the track (e.g., 0%, -100%, -200%)
+            const offset = -currentSlide * 100;
+            track.style.transform = `translateX(${offset}%)`;
+
+            // Update the active dot state
+            const dots = document.querySelectorAll('.indicator-dot');
+            dots.forEach(dot => dot.classList.remove('active'));
+            if (dots[currentSlide]) {
+                dots[currentSlide].classList.add('active');
+            }
+        }
+
+        // Function to generate the dots and add click listeners
+        function createIndicators() {
+            slides.forEach((slide, index) => {
+                const dot = document.createElement('span');
+                dot.classList.add('indicator-dot');
+                dot.dataset.slideIndex = index;
+                
+                dot.addEventListener('click', (e) => {
+                    stopAutoSlide(); 
+                    // Set the current slide based on the dot's data attribute
+                    currentSlide = parseInt(e.target.dataset.slideIndex);
+                    updateCarousel();
+                    startAutoSlide(); 
+                });
+                
+                indicatorsContainer.appendChild(dot);
+            });
+        }
+        
+        // Function to automatically advance the slide
+        function nextSlide() {
+            // Wrap around: if we are on the last slide, go back to the first (0)
+            currentSlide = (currentSlide === totalSlides - 1) ? 0 : currentSlide + 1;
+            updateCarousel();
+        }
+
+        // Function to start the automatic sliding
+        function startAutoSlide() {
+            autoSlideTimer = setInterval(nextSlide, slideInterval);
+        }
+
+        // Function to stop the automatic sliding
+        function stopAutoSlide() {
+            clearInterval(autoSlideTimer);
+        }
+
+        // Event listener for the 'Next' button
+        nextButton.addEventListener('click', () => {
+            stopAutoSlide(); 
+            nextSlide();    
+            startAutoSlide(); 
+        });
+
+        // Event listener for the 'Previous' button
+        prevButton.addEventListener('click', () => {
+            stopAutoSlide(); 
+            // Wrap around: if we are on the first slide, go to the last
+            currentSlide = (currentSlide === 0) ? totalSlides - 1 : currentSlide - 1;
+            updateCarousel();
+            startAutoSlide(); 
+        });
+
+        // Pause timer when mouse hovers over the carousel
+        carouselContainer.addEventListener('mouseenter', stopAutoSlide);
+        carouselContainer.addEventListener('mouseleave', startAutoSlide);
+
+        // --- Initialization ---
+        createIndicators(); 
+        startAutoSlide();
+        updateCarousel(); // Set initial state (position and active dot)
+    </script>
   </body>
 </html>
