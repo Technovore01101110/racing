@@ -1,6 +1,6 @@
 /*
   To import this file, use this syntax
-  @import "./variables.css";
+  @import url(./variables.css);
 
   Read about CSS variables: https://developer.mozilla.org/en-US/docs/Web/CSS/Guides/Cascading_variables/Using_custom_properties
 */
