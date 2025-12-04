@@ -1,72 +1,62 @@
-<head>
-    <!-- style sheet, icon, stuff here -->
-    <link rel="stylesheet" href="styles/style.css" type="text/css" />
-    <link rel="stylesheet" href="styles/events.css" type="text/css" />
+<html lang="en">
+	<head>
+		<!-- style sheet, icon, stuff here -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+		/>
+		<link rel="stylesheet" href="styles/style.css" type="text/css" />
+		<link rel="stylesheet" href="styles/events.css" type="text/css" />
+		<script type="module" src="./scripts/main.js" defer></script>
+	</head>
 
-</head>
+	<body>
+		<header>
+			<!-- Header inserts dynamically -->
+		</header>
+		<!-- Start of unique content -->
+		<div id="hero-container">
+			<h1>Events</h1>
+			<img id="hero" src="images/hero1.png" alt="Events Hero Image" />
+		</div>
+		<!-- List of events -->
+		<div id="upcoming-events">
+			<h2>Upcoming Events</h2>
 
-<body>
-    <!-- import header -->
-     <header>
-			<img src="images/gwr-emblem.png" alt="Great Western Racing Logo" width=100px />
-			<nav>
-				<a href="index.html">Home</a>
-				<a href="events.html">Events</a>
-				<a href="info.html">About Us</a>
-				<a href="https://runsignup.com/Race/Register/?raceId=190975">Sign Up</a>
-				<a href="https://runsignup.com/Race/Volunteer/ID/Rexburg/RexysChristmasBash">Volunteer</a>
-				<a href="https://runsignup.com/Race/Donate/ID/Rexburg/RexysChristmasBash">Donate</a>				
-			</nav>
-    </header>
-    <!-- Start of unique content -->
-    <div id="hero-container">
-        <h1>Events</h1>
-        <img id="hero" src="images/hero1.png" alt="Events Hero Image">
-    </div>
-    <!-- List of events -->
-    <div id="upcoming-events">
+			<div class="events-container">
+				<article class="event-item">
+					<h3>Event item</h3>
+					<p>time/place<br />Description of Event</p>
+				</article>
 
-        <h2>Upcoming Events</h2>
-        
-        <div class="events-container">
-            
-            <article class="event-item">
-                <h3>Event item</h3>
-                <p>time/place<br>Description of Event</p>
-            </article>
+				<article class="event-item">
+					<h3>Event item</h3>
 
-            <article class="event-item">
-                <h3>Event item</h3>
+					<p>time/place<br />Description of Event</p>
+				</article>
 
-                <p>time/place<br>Description of Event</p>
-            </article>
-            
-            <article class="event-item">
-                <h3>Event item</h3>
+				<article class="event-item">
+					<h3>Event item</h3>
 
-                <p>time/place<br>Description of Event</p>
-            </article>
-        
-        </div>
-    </div>
-    <div id="past-events">
-        <h2>Past Events</h2>
-        <div class="events-container">
-            
-            <article class="event-item">
-                <h3>Event item</h3>
-                <p>Description of Event</p>
-            </article>
+					<p>time/place<br />Description of Event</p>
+				</article>
+			</div>
+		</div>
+		<div id="past-events">
+			<h2>Past Events</h2>
+			<div class="events-container">
+				<article class="event-item">
+					<h3>Event item</h3>
+					<p>Description of Event</p>
+				</article>
 
-            <article class="event-item">
-                <h3>Event item</h3>
-                <p>Description of Event</p>
-            </article>
-        
-        </div>
-    </div>
+				<article class="event-item">
+					<h3>Event item</h3>
+					<p>Description of Event</p>
+				</article>
+			</div>
+		</div>
 
-    <footer>
-        Footer placeholder
-    </footer>
-</body>
+		<footer>Footer placeholder</footer>
+	</body>
+</html>
