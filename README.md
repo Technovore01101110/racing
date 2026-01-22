@@ -22,7 +22,7 @@ This is a website for Great Western Racing to list all of their events and give 
 **Events Page CSS:** Graham McClure\
 **Contact Page HTML:** Hunter Smith\
 **Contact Page CSS:** Hunter Smith\
-**Donation Page HTML:** Eldon McClure
+**Donation Page HTML:** Eldon McClure (This page might be Thanos Snapped, IDK)
 
 ## Project Overview: Great Western Racing Overview
 
