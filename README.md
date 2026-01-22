@@ -70,4 +70,8 @@ Yes.
 
 ### 5. Functionality
 
-Zelda Asvitt
+- Which
+
+#### Names
+- Joshua Walker
+- Zelda Asvitt
