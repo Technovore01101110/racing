@@ -69,9 +69,9 @@ Yes.
 - **Who will create or approve content?**
 
 ### 5. Functionality
-
 - Which
 
 #### Names
 - Joshua Walker
 - Zelda Asvitt
+- Yat Lam
