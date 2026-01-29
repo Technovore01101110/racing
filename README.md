@@ -18,9 +18,8 @@ This is a website for Great Western Racing to list all of their events and give 
 
 **Home Page:** Joshua Walker, Brady\
 **Events Page:** Graham McClure, Nathan Sharp\
-**FAQ Page:** Yat, Daniel\
+**FAQ Page:** Yat, Daniel, Eldon\
 **About Page:** Kian, Zelda\
-**Donation Page:** Eldon McClure
 
 ## Project Overview: Great Western Racing Overview
 
