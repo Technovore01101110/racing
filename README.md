@@ -16,10 +16,17 @@ This is a website for Great Western Racing to list all of their events and give 
 
 ## Page Positions:
 
-**Home Page:** Joshua Walker, Brady\
+**Faculty Advisor:** Zachariah Alvey
+**Manager:** Alex\
+**Home Page:** Joshua Walker, Brady, Sam\
 **Events Page:** Graham McClure, Nathan Sharp\
 **FAQ Page:** Yat, Daniel, Eldon\
+<<<<<<< HEAD
 **About Page:** Kian, Zelda\
+=======
+**About Page:** Kian, Zelda, Laurin\
+**Header/Footer Section:** Hunter, Nephi
+>>>>>>> upstream/main
 
 ## Project Overview: Great Western Racing Overview
 
@@ -28,33 +35,13 @@ This is a website for Great Western Racing to list all of their events and give 
 **Contact Info:**\
 **Faculty Advisor:** Zachariah Alvey
 
-### 1. Company Background
-- **What does your company do?**
-
-- **What products or services do you offer?**
-
-- **Who is your target audience or ideal customer?**
-
-- **What makes your company unique from competitors?**
-
-
-### 2. Website Goals
-
-- **Main purpose of the website:**
-- **What actions should visitors take?**
-- **What problems should the website solve?**
-
-### 3. Design & Branding
-
-- **Existing logo or brand assets?**\
-Yes.
-
 - **Brand colors or typography:**
-    - `#6b8361`
-    - `#3b5b56`
-    - `#c79b42`
-    - `#f3ebd8`
+    - `#0498d5`
+    - `#bcd631`
+    - `#1ab369`
+    - `#ffffff`
 
+<<<<<<< HEAD
 - **Websites you like & why:**
 
 - **Desired style or tone:**
@@ -72,3 +59,5 @@ Yes.
 - Joshua Walker
 - Zelda Asvitt
 - Yat Lam
+=======
+>>>>>>> upstream/main
