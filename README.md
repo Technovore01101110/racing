@@ -16,21 +16,11 @@ This is a website for Great Western Racing to list all of their events and give 
 
 ## Page Positions:
 
-<<<<<<< HEAD
-**Home Page HTML:** Joshua Walker\
-**Home Page CSS:** Joshua Walker\
-**Events Page HTML:** Graham McClure\
-**Events Page CSS:** Graham McClure\
-**Contact Page HTML:** Hunter Smith\
-**Contact Page CSS:** Hunter Smith\
-**Donation Page HTML:** Eldon McClure (This page might be Thanos Snapped, IDK)
-=======
 **Home Page:** Joshua Walker, Brady\
 **Events Page:** Graham McClure, Nathan Sharp\
 **FAQ Page:** Yat, Daniel\
 **About Page:** Kian, Zelda\
 **Donation Page:** Eldon McClure
->>>>>>> ce2cf4dc23390b65de9f9f5991a8ab4e56a50ba7
 
 ## Project Overview: Great Western Racing Overview
 
