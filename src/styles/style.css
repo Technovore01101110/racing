@@ -262,6 +262,25 @@ h1 {
             transform: scale(1.2);
         }
 /* events section */
+#hero-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#hero-container h1{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    z-index: 2;
+    color: var(--Yellow);
+}
+
+#hero{
+    width: 100%;
+    grid-row: 1/4;
+    grid-column: 1/4;
+}
+
 
 /* contact section */
 .greg-pic img {
