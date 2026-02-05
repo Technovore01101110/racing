@@ -1,13 +1,13 @@
 <head>
     <!-- style sheet, icon, stuff here -->
     <link rel="stylesheet" href="styles/style.css" type="text/css" />
+	<script src="scripts/events.js"></script>
     <!-- <link rel="stylesheet" href="styles/events.css" type="text/css" /> -->
     <style id="events-styles">
         
         #upcoming-events, #past-events {
-            /* display:grid; */
-            /* grid-template: 100% / 1fr 1fr 1fr; */
-            margin: 1em;
+            position: relative; /*required for left/right buttons' absolute positioning*/
+			margin: 1em;
             max-width: 90%;
             background-color:blue;
             padding:2em;
@@ -18,7 +18,7 @@
             /*enable hidden when done testing:*/
             /* overflow:hidden;  */ 
             justify-content: center;
-            
+            overflow: hidden;
         }
 
         /* Event items */
@@ -45,6 +45,12 @@
             transition: transform 0.5s ease-in-out;
             transform: translateX(100%);
         }
+		.btn-right {
+			position: absolute;
+			top: 40%;
+			right: 0;
+			border: none;
+		}
         
     </style>
 </head>
@@ -128,6 +134,7 @@
 					</article>
 				</div>
 			</div>
+			<button class="btn-right" onclick="slideRight()">BUTTON_R</button>
 		</div>
 		<div id="past-events">
 			<h2>Past Events</h2>
