@@ -1,8 +1,8 @@
 import { questionCard } from './templates.js';
-import { isDevelopment, readJson } from '../utils.js';
+import { isDevelopment, readJson } from '../../utils/index.js';
 import { initFaqSelfClose } from './faqControls.js';
 
-const FAQ_PATH = `${isDevelopment() ? '/src' : '/racing'}/scripts/faq/questions.json`;
+const FAQ_PATH = `${isDevelopment() ? '/src' : '/racing'}/scripts/pages/faq/questions.json`;
 
 (async function loadFaqPage() {
 	// Load Questions
