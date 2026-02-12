@@ -1,59 +1,4 @@
-<head>
-    <!-- style sheet, icon, stuff here -->
-    <link rel="stylesheet" href="styles/style.css" type="text/css" />
-	<script src="scripts/events.js"></script>
-    <!-- <link rel="stylesheet" href="styles/events.css" type="text/css" /> -->
-    <style id="events-styles">
-        
-        #upcoming-events, #past-events {
-            position: relative; /*required for left/right buttons' absolute positioning*/
-			margin: 1em;
-            max-width: 90%;
-            background-color:blue;
-            padding:2em;
-        }
-        /* Containers */
-        .pages-container {
-            display:flex;
-            /*enable hidden when done testing:*/
-            /* overflow:hidden;  */ 
-            justify-content: center;
-            overflow: hidden;
-        }
-
-        /* Event items */
-        .event-item {
-            display: inline-block;
-            margin: 0 1em 0 1em;
-            height: 10em;
-        }
-        /* each page */
-        .page {
-            display: flex;
-            flex-wrap: wrap;
-            min-width: 100%;      
-        }
-        /* Class applied via javascript to 
-           page elements before translating pos */
-        .event-page-sliding-r {
-            /* sliding animation */
-            transition: transform 0.5s ease-in-out;
-            transform: translateX(-100%);
-        }
-        .event-page-sliding-l {
-            /* sliding animation */
-            transition: transform 0.5s ease-in-out;
-            transform: translateX(100%);
-        }
-		.btn-right {
-			position: absolute;
-			top: 40%;
-			right: 0;
-			border: none;
-		}
-        
-    </style>
-</head>
+<!doctype html>
 <html lang="en">
 	<head>
 		<!-- style sheet, icon, stuff here -->
@@ -61,8 +6,9 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
 		/>
-		<link rel="stylesheet" href="styles/style.css" type="text/css" />
-		<link rel="stylesheet" href="styles/events.css" type="text/css" />
+		<link rel="stylesheet" href="./styles/main.css" />
+		<link rel="stylesheet" href="./styles/pages/events.css" />
+		<script type="module" src="scripts/pages/events/index.js" defer></script>
 		<script type="module" src="./scripts/main.js" defer></script>
 	</head>
 

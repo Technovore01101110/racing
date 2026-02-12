@@ -1,3 +1,5 @@
+// 2nd FAQ page? Lets combine the best of both approaches to create an FAQ
+
 async function generateFaq() {
 	try {
 		const response = await fetch('questions.json');
