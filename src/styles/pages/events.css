@@ -39,11 +39,17 @@
 	transition: transform 0.5s ease-in-out;
 	transform: translateX(100%);
 }
-.btn-right {
+.slide-btn {
 	position: absolute;
 	top: 40%;
-	right: 0;
 	border: none;
+
+}
+.btn-right {
+	right: 0;
+}
+.btn-left {
+	left: 0;
 }
 
 /* events section */
