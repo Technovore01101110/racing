@@ -42,15 +42,15 @@
 	background-size: cover;
 }
 .carousel-slide:nth-child(2) {
-	background: url(../images/hero1.jpg);
+	background: url(../../images/hero1.jpg);
 	background-size: cover;
 }
 .carousel-slide:nth-child(3) {
-	background: url(../images/hero2.jpg);
+	background: url(../../images/hero2.jpg);
 	background-size: cover;
 }
 .carousel-slide:nth-child(4) {
-	background: url(../images/hero3.jpg);
+	background: url(../../images/hero3.jpg);
 	background-size: cover;
 }
 

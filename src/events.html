@@ -8,7 +8,7 @@
 		/>
 		<link rel="stylesheet" href="./styles/main.css" />
 		<link rel="stylesheet" href="./styles/pages/events.css" />
-		<script type="module" src="scripts/pages/events/index.js" defer></script>
+		<script type="text/javascript" src="./scripts/pages/events/index.js" defer></script>
 		<script type="module" src="./scripts/main.js" defer></script>
 	</head>
 
@@ -20,6 +20,16 @@
 		<div id="hero-container">
 			<h1>Events</h1>
 			<img id="event-hero" src="images/event-hero.png" alt="Events Hero Image" />
+		</div>
+		<div id="weekly-run">
+			<h2>Weekly Run Club</h2>
+			<p>
+				Come have fun in the run, in the sun and snow...
+			</p>
+			<div id="week-run-info">
+				<h3>Time: 5:30</h3>
+				<h3>Location: Subway Circle</h3>
+			</div>
 		</div>
 		<!-- List of events -->
 		<div id="upcoming-events">
@@ -80,7 +90,9 @@
 					</article>
 				</div>
 			</div>
-			<button class="btn-right" onclick="slideRight()">BUTTON_R</button>
+			<button class="slide-btn btn-right" onclick="slideRight()">BUTTON_R</button>
+			<button class="slide-btn btn-left" onclick="slideLeft()">BUTTON_L</button>
+
 		</div>
 		<div id="past-events">
 			<h2>Past Events</h2>
