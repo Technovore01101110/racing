@@ -98,18 +98,32 @@
 
 #weekly-run{
 	margin: 0 auto;
-	width: 80%;
+	width: 40%;
 	display: flex;
 	flex-direction: column;
-	text-align: center;
-	margin-top: 30px;
+	text-align: left;
 	background-color: white;
 	border: 4px solid var(--text-on-dark);
 	border-radius: 20px;
+	height: 300px;
+	color: var(--text-on-light);
 }
 
-#week-run-info{
+#weekly-run-wrapper{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	margin-top: 30px;
+	align-items: center;
+	padding: 20px;
+}
+
+
+
+#weekly-run *{
+	margin-left: 20px;
+}
+
+#weekly-run a{
+	color: var(--secondary-color);
+	text-decoration: underline;
 }
