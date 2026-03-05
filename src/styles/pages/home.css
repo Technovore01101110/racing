@@ -4,8 +4,16 @@
 } 
 
 .get-started-block {
-	background-color: #f3ebd8;
-	height: 400px;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f3ebd8;
+    height: 550px;
+}
+.get-started-block h2 {
+	margin-top: 40px;
+	font-size: 2em;
+	font-weight: bold;
 }
 .about-founders-section {
 	background-color: #f3ebd8;
@@ -271,4 +279,54 @@
 	margin: auto;
 }
 
+.card-container {
+	width: 320px;
+	background: white;
+	border-radius: 12px;
+	overflow: hidden; /* Ensures image doesn't bleed over corners */
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+	transition: transform 0.3s ease;
+	border: 1px solid #eee;
+}
 
+.card-container:hover {
+	transform: translateY(-10px);
+}
+
+.card-image {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	display: block;
+}
+
+.card-content {
+	padding: 24px;
+}
+
+.card-title {
+	margin: 0 0 12px 0;
+	font-size: 1.4em;
+	color: #333;
+}
+
+.card-description {
+	font-size: 0.95em;
+	color: #555;
+	line-height: 1.5;
+	margin-bottom: 25px;
+}
+
+/* Common Button Styling */
+.card-btn {
+		background-color: #007bff;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 6px;
+	font-weight: bold;
+	cursor: pointer;
+	text-decoration: none;
+	display: inline-block;
+	transition: opacity 0.3s;
+}
