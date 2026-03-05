@@ -1,8 +1,15 @@
 const navLinks = [
 	{ href: 'index.html', text: 'Home' },
-	{ href: 'events.html', text: 'Events' },
 	{ href: 'about.html', text: 'About Us' },
-	{ href: 'https://runsignup.com/Race/Register/?raceId=190975', text: 'Sign Up', isExternal: true },
+	{ href: 'events.html', text: 'Events' },
+	{ href: 'gallery.html', text: 'View Gallery' },
+	{ href: 'faq.html', text: 'FAQ' },
+	{ href: 'donations.html', text: 'Donations' },
+	{
+		href: 'https://runsignup.com/Race/ID/Rexburg/UndergradSpring2026?utm_source=platform_find_a_race&utm_medium=referral',
+		text: 'Sign Up',
+		isExternal: true,
+	},
 	{
 		href: 'https://runsignup.com/Race/Volunteer/ID/Rexburg/RexysChristmasBash',
 		text: 'Volunteer',
@@ -27,8 +34,9 @@ function navLink({ href, text, isExternal }) {
 }
 
 function header() {
+	// hardcoded the homepage to the logo link, so it has to be updated her if the link changes.
 	return `
-    <img src="images/logo.png" alt="Great Western Racing Logo"/>
+	<a href="${navLinks[0].href}"><img src="images/logo.png" alt="Great Western Racing Logo"/></a>
     <nav id="nav">
       ${navLinks.map((link) => navLink(link)).join('')}
     </nav>
