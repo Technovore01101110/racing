@@ -1,10 +1,32 @@
+/* Page-wide basic reset (Feel free to delete if it's breaking things) */
+* {
+	box-sizing: border-box;
+} 
+
 .get-started-block {
 	background-color: #f3ebd8;
 	height: 400px;
 }
-.testimonial-carousel {
+.about-founders-section {
 	background-color: #f3ebd8;
-	height: 250px;
+	height: 400px;
+}
+.about-founders-div {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 80%;
+	margin: 0 auto;
+	/* place-items: center; */
+	align-items: end;
+}
+.about-founders {
+	grid-row: 1/3;
+	grid-column: 2/3;
+	place-self: end;
+}
+.about-founders img{
+	width: 400px;
+	border-radius: 15px;
 }
 .sponsor-logos {
 	background-color: #f3ebd8;
@@ -221,82 +243,32 @@
 	overflow: auto;
 }
 
-.get-started-block {
-	padding: 40px;
+.section-header {
+	text-align: center;
+	font-size: 2em;
+	font-weight: bold; 
 }
 
-.card-container {
-	width: 320px;
-	background: white;
-	border-radius: 12px;
-	overflow: hidden; /* Ensures image doesn't bleed over corners */
-	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-	transition: transform 0.3s ease;
-	border: 1px solid #eee;
+/* --- Sponsor Logos --- */
+#sponsor-grid {
+	display: grid;
+	width: 80vw;
+	margin: auto;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 20px;
 }
 
-.card-container:hover {
-	transform: translateY(-10px);
-}
-
-.card-image {
+.sponsor-img-link {
 	width: 100%;
-	height: 200px;
-	object-fit: cover;
+	aspect-ratio: 1/1;
+	padding: 0;
+}
+
+.sponsor-img {
 	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	margin: auto;
 }
 
-.card-content {
-	padding: 24px;
-}
 
-.card-title {
-	margin: 0 0 12px 0;
-	font-size: 1.4em;
-	color: #333;
-}
-
-.card-description {
-	font-size: 0.95em;
-	color: #555;
-	line-height: 1.5;
-	margin-bottom: 25px;
-}
-
-/* Common Button Styling */
-.card-btn {
-	background-color: #007bff;
-	color: white;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 6px;
-	font-weight: bold;
-	cursor: pointer;
-	text-decoration: none;
-	display: inline-block;
-	transition: opacity 0.3s;
-}
-.card-btn:hover {
-	background-color: #0056b3;
-}
-
-/* Container adjustment to center the h2 */
-.get-started-block {
-    display: flex;
-	flex-direction: column;
-    justify-content: center;
-    align-items: center;
-	height: 100%;
-}
-
-/* Direct styles for the h2 */
-.get-started-block h2 {
-    margin: 0;
-    font-size: 3rem;
-    font-weight: 6800;
-    color: #333;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    position: relative;
-    padding-bottom: 15px;
-}
