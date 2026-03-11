@@ -35,36 +35,38 @@
 		<main>
 			<div class="carousel-container">
 				<div class="carousel-track">
-					<div class="carousel-slide">
+					<div class="carousel-slide video-slide">
+						<div class="video-background">
+							<iframe
+								src="https://www.youtube.com/embed/y2VQD7ZZ85M?autoplay=1&mute=1&loop=1&playlist=y2VQD7ZZ85M&controls=0&modestbranding=1&rel=0&iv_load_policy=3"
+								frameborder="0"
+								allow="autoplay; encrypted-media"
+							>
+							</iframe>
+						</div>
 						<div class="slide-content">
-							<h3>Design Services</h3>
-							<p>
-								Need a modern, responsive website? Our team delivers beautiful and functional
-								designs. Click below to view our portfolio.
-							</p>
-							<a href="#design" class="cta-button">View Portfolio</a>
+							<p>Learn about our next race!</p>
+							<a href="#design" class="card-btn">Next Race</a>
 						</div>
 					</div>
 
 					<div class="carousel-slide">
 						<div class="slide-content">
-							<h3>Development Solutions</h3>
 							<p>
 								We build robust web applications using the latest JavaScript frameworks and powerful
 								back-end technologies.
 							</p>
-							<a href="#dev" class="cta-button">Start a Project</a>
+							<a href="#dev" class="card-btn">Start a Project</a>
 						</div>
 					</div>
 
 					<div class="carousel-slide">
 						<div class="slide-content">
-							<h3>SEO & Marketing</h3>
 							<p>
 								Increase your visibility and traffic. We help you rank higher and connect with your
 								audience for massive growth.
 							</p>
-							<a href="#seo" class="cta-button">Get a Quote</a>
+							<a href="#seo" class="card-btn">Get a Quote</a>
 						</div>
 					</div>
 
@@ -75,7 +77,7 @@
 								We build robust web applications using the latest JavaScript frameworks and powerful
 								back-end technologies.
 							</p>
-							<a href="#dev" class="cta-button">Start a Project</a>
+							<a href="#dev" class="card-btn">Start a Project</a>
 						</div>
 					</div>
 				</div>
@@ -86,25 +88,83 @@
 				<button class="next-button">&gt;</button>
 			</div>
 			<p>We run -- by students, for students, with students</p>
-			<section class="get-started-block">Get Started</section>
-			<section class="testimonial-carousel">What our runners are saying...</section>
+			<section class="get-started-block">
+				<h2>Get Started</h2>
+				<div class="card-container option-blue">
+					<img
+						src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&q=80&w=800"
+						alt="Runner"
+						class="card-image"
+					/>
+					<div class="card-content">
+						<h3 class="card-title">Blue Plan: Private</h3>
+						<p class="card-description">
+							Get dedicated 1-on-1 coaching with a fixed monthly schedule. Perfect for athletes
+							looking for consistent, professional growth.
+						</p>
+						<a href="#" class="card-btn">Enroll Now</a>
+					</div>
+				</div>
+			</section>
+			<section class="about-founders-section">
+				<div class="about-founders-div">
+					<div class="about-description">Description a little bit about the company/history</div>
+					<div class="about-founders">
+						<img src="../src/images/founders_home.jpg" alt="founders image" />
+					</div>
+					<div class="about-button"><button class="cta-button">Where are we now?</button></div>
+				</div>
+			</section>
 			<section class="sponsor-logos">
-				<img src="images/BYUI Alumni Logo.png" alt="BYUI alumni logo" />
+				<h2 class="section-header" id="sponsors-header">Our Sponsors</h2>
+				<div id="sponsor-grid">
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/400/300" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/100" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/410" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/400/225" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/500" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/460/320" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/320/480" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/480" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/270" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/114" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/800" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/1600/900" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+					<a href="#" class="sponsor-img-link">
+						<img src="https:picsum.photos/240/360" alt="Sponsor logo" class="sponsor-img" />
+					</a>
+				</div>
 			</section>
 		</main>
 
 		<!-- Add divs for advertisement images -->
 
 		<footer>
-			<div class="social">
-				<a target="_blank" href="https://www.instagram.com/greatwesternracing/#"
-					><img src="" alt="Instagram"
-				/></a>
-
-				<a target="_blank" href="https://www.linkedin.com/company/great-western-racing/"
-					><img src="" alt="LinkedIn"
-				/></a>
-			</div>
+			<!-- Footer inserts dynamically -->
 		</footer>
 		<div class="popup-overlay">
 			<div class="popup-content">

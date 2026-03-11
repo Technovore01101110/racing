@@ -1,8 +1,19 @@
+import { isDevelopment } from '../utils/index.js';
+
+const hrefExt = isDevelopment() ? '.html' : '';
+
 const navLinks = [
-	{ href: 'index.html', text: 'Home' },
-	{ href: 'events.html', text: 'Events' },
-	{ href: 'about.html', text: 'About Us' },
-	{ href: 'https://runsignup.com/Race/Register/?raceId=190975', text: 'Sign Up', isExternal: true },
+	{ href: isDevelopment() ? 'index.html' : '/', text: 'Home' },
+	{ href: 'about' + hrefExt, text: 'About Us' },
+	{ href: 'events' + hrefExt, text: 'Events' },
+	{ href: 'gallery' + hrefExt, text: 'View Gallery' },
+	{ href: 'faq' + hrefExt, text: 'FAQ' },
+	{ href: 'donations' + hrefExt, text: 'Donations' },
+	{
+		href: 'https://runsignup.com/Race/ID/Rexburg/UndergradSpring2026?utm_source=platform_find_a_race&utm_medium=referral',
+		text: 'Sign Up',
+		isExternal: true,
+	},
 	{
 		href: 'https://runsignup.com/Race/Volunteer/ID/Rexburg/RexysChristmasBash',
 		text: 'Volunteer',
@@ -21,21 +32,39 @@ function navLink({ href, text, isExternal }) {
 	let link = `<a href="${href}"`;
 	if (isExternal) link += ' target="_blank"';
 	link += `>${text}`;
-	if (isExternal) link += ' <i class="fa-solid fa-up-right-from-square"></i>';
+	if (isExternal) link += '  <i class="fa-solid fa-up-right-from-square fa-xs"></i>';
 	link += '</a>';
 	return link;
 }
 
 function header() {
+	// hardcoded the homepage to the logo link, so it has to be updated her if the link changes.
 	return `
-    <img src="images/logo.png" alt="Great Western Racing Logo" width=100px />
-    <nav>
+	<a href="${navLinks[0].href}"><img src="images/logo.png" alt="Great Western Racing Logo"/></a>
+    <nav id="nav">
       ${navLinks.map((link) => navLink(link)).join('')}
     </nav>
+	<div>
+		<i id="hamburger" class="hamburger fa-solid fa-bars"></i>
+	</div>
   `;
+}
+
+function toggleMenu() {
+	const hamburger = document.getElementById('hamburger');
+	const nav = document.getElementById('nav');
+	hamburger.addEventListener('click', function () {
+		nav.classList.toggle('show');
+
+		// update accessibility state
+		const isOpen = !nav.classList.contains('show');
+		hamburger.setAttribute('aria-expanded', isOpen);
+	});
 }
 
 export function insertHeader() {
 	const headerElement = header();
 	document.querySelector('header').insertAdjacentHTML('beforeend', headerElement);
+
+	toggleMenu();
 }
