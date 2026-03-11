@@ -1,10 +1,14 @@
+import { isDevelopment } from '../utils/index.js';
+
+const hrefExt = isDevelopment() ? '.html' : '';
+
 const navLinks = [
-	{ href: 'index.html', text: 'Home' },
-	{ href: 'about.html', text: 'About Us' },
-	{ href: 'events.html', text: 'Events' },
-	{ href: 'gallery.html', text: 'View Gallery' },
-	{ href: 'faq.html', text: 'FAQ' },
-	{ href: 'donations.html', text: 'Donations' },
+	{ href: isDevelopment() ? 'index.html' : '/', text: 'Home' },
+	{ href: 'about' + hrefExt, text: 'About Us' },
+	{ href: 'events' + hrefExt, text: 'Events' },
+	{ href: 'gallery' + hrefExt, text: 'View Gallery' },
+	{ href: 'faq' + hrefExt, text: 'FAQ' },
+	{ href: 'donations' + hrefExt, text: 'Donations' },
 	{
 		href: 'https://runsignup.com/Race/ID/Rexburg/UndergradSpring2026?utm_source=platform_find_a_race&utm_medium=referral',
 		text: 'Sign Up',
