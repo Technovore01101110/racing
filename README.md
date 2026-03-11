@@ -11,12 +11,6 @@ This is a website for Great Western Racing to list all of their events and give 
 - [First Race Sign up](https://runsignup.com/Race/ID/Rexburg/RexysChristmasBash)
 - [Second Race Sign up](https://runsignup.com/Race/ID/Rexburg/UndergradSpring2026?utm_source=platform_find_a_race&utm_medium=referral)
 
-## Drives:
-
-- [Logos](https://drive.google.com/drive/folders/16b0oKb5bQRckMJJTIdWarY4XswYoE8Me?usp=sharing)
-- [Head_Shots](https://drive.google.com/drive/folders/13Eh49aJQ-0KJCaZkvminHD7sXEAgFxU8?usp=drive_link)
-- [Flyers](https://drive.google.com/drive/folders/1QjjrS30n8IbDmNY40WF4bqU-8QEJiDNI?usp=drive_link)
-
 ## Page Positions:
 
 **Faculty Advisor:** Zachariah Alvey
