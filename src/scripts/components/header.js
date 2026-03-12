@@ -4,27 +4,26 @@ const hrefExt = isDevelopment() ? '.html' : '';
 
 const navLinks = [
 	{ href: isDevelopment() ? 'index.html' : '/', text: 'Home' },
-	{ href: 'about' + hrefExt, text: 'About Us' },
+	{ href: 'about' + hrefExt, text: 'About' },
 	{ href: 'events' + hrefExt, text: 'Events' },
-	{ href: 'gallery' + hrefExt, text: 'View Gallery' },
+	{ href: 'gallery' + hrefExt, text: 'Gallery' },
 	{ href: 'faq' + hrefExt, text: 'FAQ' },
-	{ href: 'donations' + hrefExt, text: 'Donations' },
 	{
 		href: 'https://runsignup.com/Race/ID/Rexburg/UndergradSpring2026?utm_source=platform_find_a_race&utm_medium=referral',
 		text: 'Sign Up',
 		isExternal: true,
 	},
 	{
-		href: 'https://runsignup.com/Race/Volunteer/ID/Rexburg/RexysChristmasBash',
+		href: 'https://runsignup.com/Race/Volunteer/ID/Rexburg/UndergradSpring2026',
 		text: 'Volunteer',
 		isExternal: true,
 	},
-	{
-		// Might not need
-		href: 'https://runsignup.com/Race/Donate/ID/Rexburg/RexysChristmasBash',
-		text: 'Donate',
-		isExternal: true,
-	},
+	// {
+	// 	// Might not need
+	// 	href: 'https://runsignup.com/Race/Donate/ID/Rexburg/RexysChristmasBash',
+	// 	text: 'Donate',
+	// 	isExternal: true,
+	// },
 ];
 
 /** Constructs an `a` nav element piece by piece */
@@ -41,11 +40,11 @@ function header() {
 	// hardcoded the homepage to the logo link, so it has to be updated her if the link changes.
 	return `
 	<a href="${navLinks[0].href}"><img src="images/logo.png" alt="Great Western Racing Logo"/></a>
+	<div>
     <nav id="nav">
       ${navLinks.map((link) => navLink(link)).join('')}
     </nav>
-	<div>
-		<i id="hamburger" class="hamburger fa-solid fa-bars"></i>
+		<i id="hamburger" class="hamburger fa-solid fa-bars fa-2x"></i>
 	</div>
   `;
 }
