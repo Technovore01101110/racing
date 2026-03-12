@@ -24,7 +24,6 @@ body {
     border:5px solid black;
 }
 
-#gallery-heading {
-    margin:auto;
-    text-align: center;
+h1 {
+    padding-top: 20px;
 }
